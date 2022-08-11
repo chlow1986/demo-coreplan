@@ -1,0 +1,59 @@
+.App {
+  font-family: sans-serif;
+}
+
+* {
+  font-family: "Raleway", sans-serif;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  color: #797979;
+  margin: 6px 0;
+}
+
+input {
+  padding: 6px;
+  border-radius: 6px;
+  border-color: #797979;
+}
+
+.bullet-input {
+  display: flex;
+  flex-direction: row;
+}
+
+.bullet-input input {
+  flex-grow: 1;
+  margin-right: 12px;
+}
+
+button {
+  background-color: #fff;
+  border-color: #263d5f;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.custom-list {
+  list-style: none; /* Remove default bullets */
+}
+
+.custom-list li::before {
+  font-size: 1.4em;
+  content: "\2022";
+  color: #01ffd3;
+  font-weight: bold;
+  display: inline;
+  margin-right: 6px;
+  margin-left: -1.8em;
+}
+
+.custom-list li {
+  overflow-wrap: break-word;
+  margin-bottom: 2px;
+}
